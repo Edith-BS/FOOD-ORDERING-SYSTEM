@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Food Ordering System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>School Food Ordering System</h1>
+    </header>
+    
+    <main id="menu">
+        <h2>Menu</h2>
+        <!-- Add menu items here -->
+        <div class="menu-item">
+            <h3>Pizza</h3>
+            <p>Price: $5.00</p>
+            <button onclick="addToOrder('Pizza', 5.00)">Add to Order</button>
+        </div>
+        <div class="menu-item">
+            <h3>Burger</h3>
+            <p>Price: $4.00</p>
+            <button onclick="addToOrder('Burger', 4.00)">Add to Order</button>
+        </div>
+    </main>
+
+    <section id="cart">
+        <h2>Your Order</h2>
+        <ul id="order-list"></ul>
+        <p>Total: $<span id="total-price">0.00</span></p>
+        <button onclick="submitOrder()">Submit Order</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
